@@ -1,0 +1,22 @@
+@media (width >=628px) {
+    body {
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+    }
+
+    .product__card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product__image {
+        background-image: url(../images/image-product-desktop.jpg);
+        background-size: cover;
+        width: 100%;
+        aspect-ratio: 6 / 9;
+        border-radius: 0;
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+    }
+}

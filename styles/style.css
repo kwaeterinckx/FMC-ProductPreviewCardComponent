@@ -41,7 +41,12 @@ body {
 
 /* Image */
 .product__image {
-    border-radius: .5rem .5rem 0 0;
+    background-image: url(../images/image-product-mobile.jpg);
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 686 / 480;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
 }
 
 /* Info */
@@ -49,6 +54,7 @@ body {
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 1.5rem;
 }
 
