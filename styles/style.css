@@ -1,0 +1,124 @@
+/* Default settings */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+:focus-visible {
+    outline: .2rem solid var(--clr-primary);
+    outline-offset: .2rem;
+}
+
+/* Custom styling */
+html {
+    font-size: var(--fs-html);
+}
+
+body {
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    font-variation-settings: "wght" 500;
+    color: var(--clr-text);
+    background-color: var(--clr-bg-body);
+    line-height: 1.6;
+}
+
+/* Main card */
+.product__card {
+    margin: 2rem 1rem;
+    border-radius: .5rem;
+    background-color: var(--clr-white);
+    max-width: 600px;
+}
+
+/* Image */
+.product__image {
+    border-radius: .5rem .5rem 0 0;
+}
+
+/* Info */
+.product__details {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.product__category {
+    font-size: .85rem;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    line-height: 1;
+}
+
+.product__title {
+    font-family: var(--ff-title);
+    font-size: 2.25rem;
+    font-variation-settings: "wght" 700;
+    color: var(--clr-title);
+    line-height: 1;
+}
+
+.product__price {
+    font-family: var(--ff-title);
+    font-size: 2.25rem;
+    font-variation-settings: "wght" 700;
+    color: var(--clr-primary);
+    line-height: 1;
+}
+
+.product__price span {
+    font-family: var(--ff-body);
+    font-size: 1rem;
+    font-variation-settings: "wght" 500;
+    color: var(--clr-text);
+    vertical-align: middle;
+    padding-left: 1rem;
+    text-decoration: line-through;
+}
+
+.product__button {
+    font-family: inherit;
+    font-variation-settings: "wght" 700;
+    color: var(--clr-white);
+    border: none;
+    background-color: var(--clr-primary);
+    padding: 1.5em;
+    border-radius: .5em;
+    line-height: 1;
+    transition: background-color 250ms ease;
+}
+
+.product__button:is(:hover, :focus-visible) {
+    background-color: var(--clr-primary-dark);
+}
+
+.product__button img {
+    display: inline-block;
+    width: 2.125rem;
+    vertical-align: middle;
+    padding-right: 1rem;
+}
+
+/* Footer */
+.attribution {
+    padding-block: 2em;
+    font-size: .75rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--clr-primary);
+}
+
+.attribution a:is(:hover, :focus-visible) {
+    color: var(--clr-primary-dark);
+}
